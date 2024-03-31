@@ -1,0 +1,264 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-salmon: #ff6060;
+  --main-white: #ffffff;
+  --main-bg-gray: #f6f6f6;
+  --main-bg-black: #000000;
+}
+
+@font-face {
+  font-family: "montserrat";
+  src: url("../assets/fonts/Montserrat/Montserrat-VariableFont_wght.ttf");
+}
+
+body {
+  font-family: "montserrat", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3 {
+  color: white;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(24px, 4vw, 48px);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: underline;
+}
+
+/* ----------------------- */
+/* ---NAVIGATION */
+/* ----------------------- */
+
+.navigation {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: clamp(20px, 3vw, 45px);
+  margin-bottom: clamp(27px, 3vw, 50px);
+}
+
+.logo img {
+  width: clamp(145px, 2vw, 210px);
+  height: clamp(46px, 2vw, 68px);
+  object-fit: cover;
+}
+
+/* .navigation img {
+  width: 200px;
+  aspect-ratio: 2;
+} */
+
+.navigation ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 60px;
+  font-weight: 500;
+}
+
+.navigation a.nav-active {
+  text-decoration: underline;
+}
+/* ----------------------- */
+/* ---HEADER */
+/* ----------------------- */
+
+.header-container {
+  margin: auto;
+  width: 90%;
+  height: 163px;
+  background: url(../assets/img/dark-bg1.png) center/cover;
+  border-radius: clamp(10px, 2vw, 25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----------------------- */
+/* ---LOGEMENT */
+/* ----------------------- */
+
+.logement-card-container {
+  background-color: #f6f6f6;
+  width: 90%;
+  margin: auto;
+  padding: 50px;
+  margin-top: clamp(22px, 2vw, 43px);
+  margin-bottom: clamp(27px, 2vw, 50px);
+  border-radius: clamp(5px, 2vw, 25px);
+}
+.logement-card-container ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.logement-card-container li {
+  position: relative;
+  width: 340px;
+  height: 340px;
+}
+.logement-card-container li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.logement-card-container li h2 {
+  position: absolute;
+  font-size: clamp(16px, 2vw, 20px);
+  top: 72%;
+  left: 42%;
+  transform: translate(-50%, -50%);
+}
+
+/* ----------------------- */
+/* ---FOOTER */
+/* ----------------------- */
+
+.footer-container {
+  background-color: black;
+  height: 209px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 80px;
+}
+.footer-container-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+footer .logo img {
+  width: 122px;
+  height: 39px;
+}
+
+footer p {
+  color: white;
+  text-wrap: balance;
+  text-align: center;
+}
+
+/* ----------------------- */
+/* ---ERROR PAGE */
+/* ----------------------- */
+
+.error-header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: auto;
+  height: 80vh;
+}
+
+.error-header .logo {
+  text-align: center;
+}
+
+.error-header .logo img {
+  width: 70%;
+  max-width: 597px;
+
+  height: auto;
+  aspect-ratio: 16/7;
+}
+
+.error-header h1 {
+  color: var(--main-salmon);
+  font-size: clamp(18px, 2vw, 36px);
+}
+
+.error-header a {
+  text-decoration: underline;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+/* --------------------------- */
+/* COLLAPSE ------------ */
+/* --------------------------- */
+
+.collapse-container {
+  width: 80%;
+  margin: auto;
+  margin-block: 30px;
+}
+
+.collapse-container button {
+  padding: 0px 25px;
+  background-color: var(--main-salmon);
+  color: var(--main-white);
+  border: none;
+  width: 100%;
+  font-weight: 700;
+  font-size: clamp(18px, 2vw, 24px);
+  border-radius: 5px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.collapse-container button:hover {
+  cursor: pointer;
+}
+
+.collapse-container button img {
+  width: 30px;
+  transition: transform 0.3s ease-out;
+}
+
+.collapse-container button img.open {
+  transform: rotate(180deg);
+}
+
+.content {
+  background-color: var(--main-bg-gray);
+  padding: 1.5rem 2rem;
+  border-radius: 5px;
+}
+
+.content-parent {
+  height: 0px;
+  overflow: hidden;
+  transition: height ease-out 0.35s;
+}
+
+.content-show {
+  height: 200px;
+}
+
+.content p {
+  font-size: 18px;
+}
