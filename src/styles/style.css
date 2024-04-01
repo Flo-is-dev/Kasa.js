@@ -262,3 +262,20 @@ footer p {
 .content p {
   font-size: 18px;
 }
+
+/* --------------------------- */
+/* CAROUSEL */
+/* --------------------------- */
+.carousel-container {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+}
+.carousel-container img {
+  width: 100%;
+  min-height: 255px;
+  height: 415px;
+  max-height: 415px;
+  border-radius: 25px;
+  object-fit: cover;
+}

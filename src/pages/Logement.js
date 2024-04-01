@@ -10,12 +10,12 @@ const Logement = () => {
   let data = require("../data/data.json");
 
   //   PARAM = id de la âge voulue
-  const param = useParams();
-  console.log(param, "====PARAM");
+  const { id } = useParams();
+  console.log(id, "====PARAM");
 
   //   filteredData = les informations complètes de PARAM
   const filteredData = data.filter((obj) => {
-    return obj.id === param.id;
+    return obj.id === id;
   })[0];
 
   console.log("===filteredData===", filteredData);
@@ -23,7 +23,7 @@ const Logement = () => {
   return (
     <div>
       <Navigation />
-      <Carousel images={filteredData.pictures} />
+      <Carousel />
       <Information />
       <Footer />
     </div>
