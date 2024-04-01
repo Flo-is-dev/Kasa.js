@@ -336,6 +336,11 @@ footer p {
 .informationTxtLeft,
 .informationTxtRight {
   width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .informationTxtContainer h1 {
@@ -348,6 +353,23 @@ footer p {
   color: var(--main-bg-black);
   font-weight: 500;
   font-size: 18px;
+}
+
+.tagContainer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+}
+
+.tag {
+  font-size: 14px;
+  font-weight: 700;
+  background-color: var(--main-salmon);
+  color: var(--main-white);
+  border-radius: 10px;
+  padding: 5px 25px;
+  user-select: none;
 }
 
 .informationTxtRight {

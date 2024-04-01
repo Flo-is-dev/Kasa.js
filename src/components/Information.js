@@ -1,6 +1,7 @@
 import React from "react";
 import Collapse from "../components/Collapse";
 import StarScale from "./StarScale";
+import Tag from "./Tag";
 
 const Information = ({ filteredData }) => {
   return (
@@ -9,7 +10,7 @@ const Information = ({ filteredData }) => {
         <div className="informationTxtLeft">
           <h1>{filteredData.title}</h1>
           <h3>{filteredData.location}</h3>
-          <p>[CARD]</p>
+          <Tag tags={filteredData.tags} />
         </div>
         <div className="informationTxtRight">
           <div className="informationLocation">
