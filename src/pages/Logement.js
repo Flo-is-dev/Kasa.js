@@ -24,7 +24,7 @@ const Logement = () => {
     <div>
       <Navigation />
       <Carousel filteredData={filteredData} />
-      <Information />
+      <Information filteredData={filteredData} />
       <Footer />
     </div>
   );

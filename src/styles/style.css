@@ -222,7 +222,7 @@ footer p {
   border: none;
   width: 100%;
   font-weight: 700;
-  font-size: clamp(18px, 2vw, 24px);
+  font-size: clamp(13px, 2vw, 24px);
   border-radius: 5px;
   height: 50px;
   display: flex;
@@ -261,6 +261,7 @@ footer p {
 
 .content p {
   font-size: 18px;
+  text-wrap: pretty;
 }
 
 /* --------------------------- */
@@ -315,4 +316,77 @@ footer p {
   color: var(--main-white);
   font-weight: 500;
   font-size: 18px;
+}
+
+/* ------------------------------------ */
+/* ----INFORMATION ----------- */
+/* ------------------------------------ */
+.informationContainer {
+  width: 90%;
+  margin: auto;
+}
+
+.informationTxtContainer {
+  margin-block: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.informationTxtLeft,
+.informationTxtRight {
+  width: 50%;
+}
+
+.informationTxtContainer h1 {
+  color: var(--main-salmon);
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.informationTxtContainer h3 {
+  color: var(--main-bg-black);
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.informationTxtRight {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.informationLocation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 170px;
+}
+
+.informationLocation p {
+  color: var(--main-salmon);
+  font-weight: 500;
+  font-size: 18px;
+  text-align: end;
+}
+
+.informationLocation img {
+  width: 65px;
+  height: 65px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.collapseContainer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 7%;
+}
+
+.collapseContainer li {
+  font-size: clamp(12px, 2vw, 18px);
+  padding-block: 2px;
 }

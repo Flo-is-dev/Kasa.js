@@ -16,7 +16,7 @@ const Collapse = (props) => {
     <div className="collapse-container">
       <button onClick={toggle}>
         {props.label}{" "}
-        <img src="./img/arrow_back.png" className={open ? "open" : ""} alt="" />
+        <img src="/img/arrow_back.png" className={open ? "open" : ""} alt="" />
       </button>
 
       <div
