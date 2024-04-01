@@ -23,7 +23,7 @@ const Logement = () => {
   return (
     <div>
       <Navigation />
-      <Carousel />
+      <Carousel filteredData={filteredData} />
       <Information />
       <Footer />
     </div>

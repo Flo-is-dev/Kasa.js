@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 
-const Carousel = ({ data }) => {
-  const dataphoto = data[15]?.pictures || [];
-  console.log(dataphoto);
+const Carousel = ({ filteredData }) => {
+  const dataphoto = filteredData?.pictures || [];
+  //   console.log(dataphoto);
 
   const [currentPhotoIndex, setCurrentPhotoIndex] = useState(0);
 
@@ -20,11 +20,11 @@ const Carousel = ({ data }) => {
     <div className="carousel-container">
       <img className="carousel-img" src={dataphoto[currentPhotoIndex]} alt="" />
 
-      <button id="btnLeft" className="carouselImg" onClick={prevPhoto}>
+      <button id="btnLeft" className="carousel-btn-img" onClick={prevPhoto}>
         <img src="/img/Vector.png" alt="" />
       </button>
 
-      <button id="btnRight" className="carouselImg" onClick={nextPhoto}>
+      <button id="btnRight" className="carousel-btn-img" onClick={nextPhoto}>
         <img src="/img/Vector.png" alt="" />
       </button>
 
