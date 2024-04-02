@@ -20,17 +20,24 @@ const Carousel = ({ filteredData }) => {
     <div className="carousel-container">
       <img className="carousel-img" src={dataphoto[currentPhotoIndex]} alt="" />
 
-      <button id="btnLeft" className="carousel-btn-img" onClick={prevPhoto}>
-        <img src="/img/Vector.png" alt="" />
-      </button>
+      {dataphoto.length > 1 && (
+        <>
+          <button id="btnLeft" className="carousel-btn-img" onClick={prevPhoto}>
+            <img src="/img/Vector.png" alt="" />
+          </button>
 
-      <button id="btnRight" className="carousel-btn-img" onClick={nextPhoto}>
-        <img src="/img/Vector.png" alt="" />
-      </button>
-
-      <div className="index-number">{`${currentPhotoIndex + 1}/${
-        dataphoto.length
-      }`}</div>
+          <button
+            id="btnRight"
+            className="carousel-btn-img"
+            onClick={nextPhoto}
+          >
+            <img src="/img/Vector.png" alt="" />
+          </button>
+          <div className="index-number">{`${currentPhotoIndex + 1}/${
+            dataphoto.length
+          }`}</div>
+        </>
+      )}
     </div>
   );
 };

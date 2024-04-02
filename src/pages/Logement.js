@@ -7,6 +7,7 @@ import Footer from "../components/Footer";
 
 const Logement = () => {
   // DATA = objet gloable (20)
+  //   !FETCH
   let data = require("../data/data.json");
 
   //   PARAM = id de la âge voulue

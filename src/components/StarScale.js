@@ -4,7 +4,7 @@ const StarScale = ({ rating }) => {
   const range = [1, 2, 3, 4, 5];
 
   return (
-    <div>
+    <div className="starsContainer">
       {range.map((rangeElem, index) => (
         <img
           key={index}
