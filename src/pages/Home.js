@@ -14,7 +14,7 @@ const Home = () => {
       <Navigation />
       <main>
         <Header children={<h1>Chez vous, partout et ailleurs</h1>} />
-        <div className="logement-card-container">
+        <div className="logementCardContainer">
           <ul>
             {data.map((logement) => {
               return <Card key={logement.id} logement={logement} />;

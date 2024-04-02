@@ -13,14 +13,14 @@ const Collapse = (props) => {
   }
 
   return (
-    <div className="collapse-container">
+    <div className="collapse">
       <button onClick={toggle}>
         {props.label}{" "}
         <img src="/img/arrow_back.png" className={open ? "open" : ""} alt="" />
       </button>
 
       <div
-        className="content-parent"
+        className="contentParent"
         ref={contentRef}
         style={
           open

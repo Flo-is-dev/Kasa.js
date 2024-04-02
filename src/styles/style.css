@@ -99,7 +99,7 @@ a:hover {
 /* ---HEADER */
 /* ----------------------- */
 
-.header-container {
+.headerContainer {
   margin: auto;
   width: 90%;
   height: 163px;
@@ -111,7 +111,7 @@ a:hover {
 }
 
 @media only screen and (max-width: 750px) {
-  .header-container h1 {
+  .headerContainer h1 {
     padding-left: 20px;
   }
 }
@@ -120,7 +120,7 @@ a:hover {
 /* ---LOGEMENT */
 /* ----------------------- */
 
-.logement-card-container {
+.logementCardContainer {
   background-color: #f6f6f6;
   width: 90%;
   margin: auto;
@@ -129,7 +129,7 @@ a:hover {
   margin-bottom: clamp(27px, 2vw, 50px);
   border-radius: clamp(5px, 2vw, 25px);
 }
-.logement-card-container ul {
+.logementCardContainer ul {
   /* display: flex;
   justify-content: center;
   align-items: center;
@@ -143,34 +143,34 @@ a:hover {
   gap: 50px;
 }
 
-.logement-card-container li {
+.logementCardContainer li {
   position: relative;
   width: 340px;
   height: 340px;
 }
-.logement-card-container li img {
+.logementCardContainer li img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.logement-card-container li h2 {
+.logementCardContainer li h2 {
   position: absolute;
-  font-size: clamp(16px, 2vw, 20px);
+  font-size: 18px;
   top: 82%;
   left: 40%;
   transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 750px) {
-  .logement-card-container {
+  .logementCardContainer {
     margin-top: 22px;
     margin-bottom: 27px;
     background-color: white;
     padding: 0px;
   }
-  .logement-card-container ul {
+  .logementCardContainer ul {
     gap: 20px;
   }
 }
@@ -179,7 +179,7 @@ a:hover {
 /* ---FOOTER */
 /* ----------------------- */
 
-.footer-container {
+.footerContainer {
   background-color: black;
   height: 209px;
   width: 100%;
@@ -188,7 +188,7 @@ a:hover {
   align-items: center;
   padding: 0px 80px;
 }
-.footer-container-box {
+.footerContainerBox {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,7 +211,7 @@ footer p {
 /* ---ERROR PAGE */
 /* ----------------------- */
 
-.error-header {
+.errorHeader {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -221,24 +221,23 @@ footer p {
   height: 80vh;
 }
 
-.error-header .logo {
+.errorHeader .logo {
   text-align: center;
 }
 
-.error-header .logo img {
+.errorHeader .logo img {
   width: 70%;
   max-width: 597px;
-
   height: auto;
   aspect-ratio: 16/7;
 }
 
-.error-header h1 {
+.errorHeader h1 {
   color: var(--main-salmon);
   font-size: clamp(18px, 2vw, 36px);
 }
 
-.error-header a {
+.errorHeader a {
   text-decoration: underline;
   font-size: clamp(14px, 2vw, 18px);
 }
@@ -249,13 +248,13 @@ footer p {
 .collapseBlockContainer {
   margin-block: 50px;
 }
-.collapse-container {
+.collapse {
   width: 75%;
   margin: auto;
   margin-block: 30px;
 }
 
-.collapse-container button {
+.collapse button {
   padding: 0px 25px;
   background-color: var(--main-salmon);
   color: var(--main-white);
@@ -270,16 +269,16 @@ footer p {
   align-items: center;
 }
 
-.collapse-container button:hover {
+.collapse button:hover {
   cursor: pointer;
 }
 
-.collapse-container button img {
+.collapse button img {
   width: 30px;
   transition: transform 0.3s ease-out;
 }
 
-.collapse-container button img.open {
+.collapse button img.open {
   transform: rotate(180deg);
 }
 
@@ -289,7 +288,7 @@ footer p {
   border-radius: 5px;
 }
 
-.content-parent {
+.contentParent {
   height: 0px;
   overflow: hidden;
   transition: height ease-out 0.35s;
@@ -308,11 +307,11 @@ footer p {
   .collapseBlockContainer {
     margin-block: 20px;
   }
-  .collapse-container {
+  .collapse {
     width: 90%;
     margin-block: 20px;
   }
-  .collapse-container p {
+  .collapse p {
     font-size: clamp(12px, 2vw, 18px);
   }
 }
@@ -320,13 +319,13 @@ footer p {
 /* --------------------------- */
 /* CAROUSEL */
 /* --------------------------- */
-.carousel-container {
+.carouselContainer {
   position: relative;
   width: 90%;
   margin: auto;
   text-align: center;
 }
-.carousel-img {
+.carouselImg {
   width: 100%;
   min-height: 255px;
   height: 415px;
@@ -349,19 +348,19 @@ footer p {
   transform: translateY(-50%) rotate(180deg);
 }
 
-.carousel-btn-img {
+.carouselBtnImg {
   cursor: pointer;
   border: none;
   background: transparent;
 }
 
-.carousel-btn-img img {
+.carouselBtnImg img {
   width: 40px;
   height: 70px;
   object-fit: cover;
 }
 
-.index-number {
+.indexNumber {
   position: absolute;
   bottom: 10%;
   left: 50%;
@@ -373,15 +372,15 @@ footer p {
 
 @media only screen and (max-width: 750px) {
   /* Styles */
-  .index-number {
+  .indexNumber {
     display: none;
   }
 
-  .carousel-btn-img img {
+  .carouselBtnImg img {
     width: 24px;
     height: 42px;
   }
-  .carousel-img {
+  .carouselImg {
     max-height: 255px;
   }
 }
@@ -521,15 +520,15 @@ footer p {
     margin-block: 20px;
   }
 
-  .collapseContainer .collapse-container {
+  .collapseContainer .collapse {
     width: 100%;
     margin: 0px 0px 0px;
   }
 
-  .collapse-container button {
+  .collapse button {
     height: 35px;
   }
-  .collapse-container button img {
+  .collapse button img {
     width: 20px;
   }
   .informationLocation img {

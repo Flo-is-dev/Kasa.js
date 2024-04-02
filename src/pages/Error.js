@@ -7,7 +7,7 @@ const Error = () => {
   return (
     <div>
       <Navigation />
-      <div className="error-header">
+      <div className="errorHeader">
         <div className="logo">
           <img src="/img/404.png" alt="" />
         </div>
