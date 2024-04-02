@@ -168,6 +168,10 @@ a:hover {
     margin-top: 22px;
     margin-bottom: 27px;
     background-color: white;
+    padding: 0px;
+  }
+  .logement-card-container ul {
+    gap: 20px;
   }
 }
 
@@ -242,9 +246,11 @@ footer p {
 /* --------------------------- */
 /* COLLAPSE ------------ */
 /* --------------------------- */
-
+.collapseBlockContainer {
+  margin-block: 50px;
+}
 .collapse-container {
-  width: 80%;
+  width: 75%;
   margin: auto;
   margin-block: 30px;
 }
@@ -296,6 +302,19 @@ footer p {
 .content p {
   font-size: 18px;
   text-wrap: pretty;
+}
+
+@media only screen and (max-width: 750px) {
+  .collapseBlockContainer {
+    margin-block: 20px;
+  }
+  .collapse-container {
+    width: 90%;
+    margin-block: 20px;
+  }
+  .collapse-container p {
+    font-size: clamp(12px, 2vw, 18px);
+  }
 }
 
 /* --------------------------- */
@@ -472,6 +491,7 @@ footer p {
     flex-direction: column;
     align-items: flex-start;
     margin: 10px 0px 0px;
+    gap: 20px;
   }
   .informationTxtLeft,
   .informationTxtRight {
@@ -511,5 +531,9 @@ footer p {
   }
   .collapse-container button img {
     width: 20px;
+  }
+  .informationLocation img {
+    width: 35px;
+    height: 35px;
   }
 }

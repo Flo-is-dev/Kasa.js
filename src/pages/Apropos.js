@@ -9,7 +9,7 @@ const Apropos = () => {
     <div>
       <Navigation />
       <Header />
-      <div style={{ marginBlock: "50px" }}>
+      <div className="collapseBlockContainer">
         <Collapse label="Fiabilité">
           <p>
             Les annonces postées sur Kasa garantissent une fiabilité totale. Les
